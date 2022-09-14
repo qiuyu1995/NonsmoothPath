@@ -1,5 +1,5 @@
 ---
-title: "Using the pathNonsmooth package"
+title: "Using the NonsmoothPath package"
 author: "Qiuyu Gu"
 date: "`r Sys.Date()`"
 #output: rmarkdown::html_vignette
@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-The `pathNonsmooth` package contains the implementation of the path-following algorithm to solve case weight adjusted problem
+The `NonsmoothPath` package contains the implementation of the path-following algorithm to solve case weight adjusted problem
 \begin{equation}
 	\label{eq:case_weight_adjusted_setup}
 	(\beta_{0,w}, \beta_w) = \text{argmin}_{\beta_0 \in \mathbb{R}, \beta \in \mathbb{R}^{p}} \sum_{i \neq i^*} f(g_i(\beta_0, \beta)) + w f(g_{i^*}(\beta_0, \beta)) + \frac{\lambda}{2} \|\beta\|_2^2,
@@ -32,8 +32,8 @@ And if we consider SVM, then
 \end{equation*} 
 The solution when $w = 1$ corresponds to the full data solution and we assume it is available to us. The algorithm computes the exact solution path of \eqref{eq:case_weight_adjusted_setup}, which is shown to be piecewise linear in $w$, as the parameter $w$ changes from 1 to 0.
 
-## Using `pathNonsmooth` functions
-For each given data and specified model, function `nonsmooth_path` in `pathNonsmooth` package computes solution path of \eqref{eq:case_weight_adjusted_setup} and outputs the
+## Using `NonsmoothPath` functions
+For each given data and specified model, function `nonsmooth_path` in `NonsmoothPath` package computes solution path of \eqref{eq:case_weight_adjusted_setup} and outputs the
 
 1. breakpoints, \
 
