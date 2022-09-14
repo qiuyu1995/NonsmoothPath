@@ -7,4 +7,4 @@ devtools::install_github("qiuyu1995/NonsmoothPath")
 Note that the installation above requires using R package [devtools](https://CRAN.R-project.org/package=devtools)
 (which can be installed using `install.packages("devtools")`).
 
-Please check the accompanying [vignette](https://github.com/qiuyu1995/NonsmoothPath/tree/master/vignettes) on how to use the `NonsmoothPath` package.
+Please check the accompanying [vignette](https://github.com/qiuyu1995/NonsmoothPath/tree/master/vignettes/vignettes.pdf) on how to use the `NonsmoothPath` package.
