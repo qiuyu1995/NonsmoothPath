@@ -1,0 +1,14 @@
+Package: pathNonsmooth
+Type: Package
+Title: Case weight adjusted problem
+Version: 1.0
+Date: 2022-09-13
+Author: Qiuyu Gu
+Maintainer: Qiuyu Gu <gu.675@osu.edu>
+Description: Compute the solution path for case weight adjusted problem with nonsmooth loss functions, including svm and quantile regression.
+License: GPL (>= 2)
+Imports: Rcpp (>= 1.0.8), CVXR, mathjaxr
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.2.0
+RdMacros: mathjaxr
+Encoding: UTF-8

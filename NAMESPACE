@@ -1,0 +1,4 @@
+useDynLib(pathNonsmooth, .registration=TRUE)
+exportPattern("^[[:alpha:]]+")
+importFrom(Rcpp, evalCpp)
+import(mathjaxr)
