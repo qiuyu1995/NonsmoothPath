@@ -58,5 +58,5 @@ nonsmooth_path <- function(X, Y, lam, obs_index, class = "quantile", tau = 0.5){
   beta_w0 <- result$getValue(beta)
   theta_w0 <- result$getDualValue(constraints[[3]]) - result$getDualValue(constraints[[4]])
   ## Run the path-following algorithm
-  .Call(`_pathNonsmooth_case_path_nonsmooth`, a, B, c, lam, alpha_0, alpha_1, obs_index-1, beta_0_w0, beta_w0, theta_w0)
+  .Call(`_NonsmoothPath_case_path_nonsmooth`, a, B, c, lam, alpha_0, alpha_1, obs_index-1, beta_0_w0, beta_w0, theta_w0)
 }

@@ -1,4 +1,4 @@
-Package: pathNonsmooth
+Package: NonsmoothPath
 Type: Package
 Title: Case weight adjusted problem
 Version: 1.0

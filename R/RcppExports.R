@@ -27,6 +27,6 @@
 #' @return Theta True values of theta_{w} at breakout points
 #' @return Beta True values of beta_{w} at breakout points
 case_path_nonsmooth <- function(a, B, c, lam, alpha_0, alpha_1, j, beta_0_w0, beta_w0, theta_w0) {
-    .Call(`_pathNonsmooth_case_path_nonsmooth`, a, B, c, lam, alpha_0, alpha_1, j, beta_0_w0, beta_w0, theta_w0)
+    .Call(`_NonsmoothPath_case_path_nonsmooth`, a, B, c, lam, alpha_0, alpha_1, j, beta_0_w0, beta_w0, theta_w0)
 }
 

@@ -13,7 +13,7 @@ Rcpp::Rostream<false>& Rcpp::Rcerr = Rcpp::Rcpp_cerr_get();
 
 // case_path_nonsmooth
 Rcpp::List case_path_nonsmooth(arma::vec a, arma::mat B, arma::vec c, double lam, double alpha_0, double alpha_1, int j, double beta_0_w0, arma::vec beta_w0, arma::vec theta_w0);
-RcppExport SEXP _pathNonsmooth_case_path_nonsmooth(SEXP aSEXP, SEXP BSEXP, SEXP cSEXP, SEXP lamSEXP, SEXP alpha_0SEXP, SEXP alpha_1SEXP, SEXP jSEXP, SEXP beta_0_w0SEXP, SEXP beta_w0SEXP, SEXP theta_w0SEXP) {
+RcppExport SEXP _NonsmoothPath_case_path_nonsmooth(SEXP aSEXP, SEXP BSEXP, SEXP cSEXP, SEXP lamSEXP, SEXP alpha_0SEXP, SEXP alpha_1SEXP, SEXP jSEXP, SEXP beta_0_w0SEXP, SEXP beta_w0SEXP, SEXP theta_w0SEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -33,11 +33,11 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_pathNonsmooth_case_path_nonsmooth", (DL_FUNC) &_pathNonsmooth_case_path_nonsmooth, 10},
+    {"_NonsmoothPath_case_path_nonsmooth", (DL_FUNC) &_NonsmoothPath_case_path_nonsmooth, 10},
     {NULL, NULL, 0}
 };
 
-RcppExport void R_init_pathNonsmooth(DllInfo *dll) {
+RcppExport void R_init_NonsmoothPath(DllInfo *dll) {
     R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
     R_useDynamicSymbols(dll, FALSE);
 }
